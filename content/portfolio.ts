@@ -16,7 +16,7 @@ export const technologies = [
  {title:'Back-end',label:'ESTRUTURA & CONFIANÇA',items:['C#','.NET','ASP.NET Core','APIs REST','Autenticação','Arquitetura Web']},
  {title:'Front-end',label:'INTERFACES & INTERAÇÃO',items:['HTML5','CSS3','JavaScript','TypeScript']},
  {title:'Experiências e animações',label:'MOVIMENTO & PROFUNDIDADE',items:['Three.js','GSAP','ScrollTrigger','Canvas','WebGL','Parallax']},
- {title:'Ferramentas',label:'DA IDEIA À PRODUÇÃO',items:['Visual Studio','Git','GitHub','Vercel','Node.js','npm','Codex','ChatGPT','Pencil']},
+ {title:'Ferramentas',label:'DA IDEIA À PRODUÇÃO',items:['Visual Studio','Git','GitHub','Vercel','Node.js','npm']},
 ];
 export const services=['Sistemas e aplicações web','SaaS','Landing pages de alta conversão','Sites institucionais e comerciais','Interfaces responsivas','Dashboards','Autenticação e áreas privadas','Experiências 3D e interativas','Projetos preparados para deploy e produção'];
 export const languages=[['Português','Nativo'],['Português de Portugal','Intermediário'],['Espanhol','Leitura e escrita'],['Latim','Em estudo'],['Mandarim','Básico / Em estudo']];

@@ -37,7 +37,7 @@
     "components/ui/dialog.tsx",
     "content/*.ts",
     "lib/utils.ts",
-    "vite.vercel.config.ts"
+    "vite.config.ts"
   ],
   "exclude": [
     "node_modules",

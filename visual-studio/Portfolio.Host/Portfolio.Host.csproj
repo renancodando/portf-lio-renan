@@ -6,11 +6,11 @@
   <FrontendRoot>$([System.IO.Path]::GetFullPath('$(MSBuildProjectDirectory)/../../'))</FrontendRoot>
  </PropertyGroup>
  <ItemGroup>
-  <Content Include="../../components/portfolio.tsx;../../components/ocean-scene.tsx;../../components/detail-panels.tsx;../../content/portfolio.ts;../../app/portfolio.css;../../package.json;../../vercel.json;../../README.md" Link="Frontend/%(Filename)%(Extension)" />
+  <Content Include="../../app/client.tsx;../../app/globals.css;../../app/portfolio.css;../../components/portfolio.tsx;../../components/ocean-scene.tsx;../../components/detail-panels.tsx;../../content/portfolio.ts;../../index.html;../../package.json;../../tsconfig.json;../../vercel.json;../../vite.config.ts" Link="Frontend/%(Filename)%(Extension)" />
  </ItemGroup>
  <Target Name="BuildFrontend" BeforeTargets="Build;ComputeFilesToPublish" Condition="'$(DesignTimeBuild)' != 'true' And '$(SkipFrontendBuild)' != 'true'">
   <Exec Command="npm ci" WorkingDirectory="$(FrontendRoot)" Condition="!Exists('$(FrontendRoot)node_modules')" />
-  <Exec Command="npm run build:vercel" WorkingDirectory="$(FrontendRoot)" />
+  <Exec Command="npm run build" WorkingDirectory="$(FrontendRoot)" />
  </Target>
  <Target Name="IncludeFrontendInPublish" AfterTargets="ComputeFilesToPublish">
   <ItemGroup>
