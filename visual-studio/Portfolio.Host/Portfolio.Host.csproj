@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+ <PropertyGroup>
+  <TargetFramework>net8.0</TargetFramework>
+  <Nullable>enable</Nullable>
+  <ImplicitUsings>enable</ImplicitUsings>
+  <FrontendRoot>$([System.IO.Path]::GetFullPath('$(MSBuildProjectDirectory)/../../'))</FrontendRoot>
+ </PropertyGroup>
+ <ItemGroup>
+  <Content Include="../../components/portfolio.tsx;../../components/ocean-scene.tsx;../../components/detail-panels.tsx;../../content/portfolio.ts;../../app/portfolio.css;../../package.json;../../vercel.json;../../README.md" Link="Frontend/%(Filename)%(Extension)" />
+ </ItemGroup>
+ <Target Name="BuildFrontend" BeforeTargets="Build;ComputeFilesToPublish" Condition="'$(DesignTimeBuild)' != 'true' And '$(SkipFrontendBuild)' != 'true'">
+  <Exec Command="npm ci" WorkingDirectory="$(FrontendRoot)" Condition="!Exists('$(FrontendRoot)node_modules')" />
+  <Exec Command="npm run build:vercel" WorkingDirectory="$(FrontendRoot)" />
+ </Target>
+ <Target Name="IncludeFrontendInPublish" AfterTargets="ComputeFilesToPublish">
+  <ItemGroup>
+   <_PortfolioFrontend Include="$(FrontendRoot)dist-vercel/**/*" />
+   <ResolvedFileToPublish Include="@(_PortfolioFrontend)">
+    <RelativePath>wwwroot/%(_PortfolioFrontend.RecursiveDir)%(_PortfolioFrontend.Filename)%(_PortfolioFrontend.Extension)</RelativePath>
+    <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+   </ResolvedFileToPublish>
+  </ItemGroup>
+ </Target>
+</Project>
