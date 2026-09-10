@@ -6,7 +6,7 @@ export const profile = {
  website: 'https://poesias-emeric.vercel.app/',
  // Link público de Areté ainda não fornecido.
  areteUrl: '',
- nextProject: { title: 'Em breve', category: 'Um novo horizonte', description: 'Este espaço está reservado para o meu próximo projeto.', url: '', image: '' },
+ nextProject: { title: 'Biblioteca Livre', category: 'Conhecimento é direito', description: 'Biblioteca digital que reúne livros, estudos, apostilas e artigos científicos de fontes abertas e gratuitas.', url: 'https://biblioteca-six-mu.vercel.app/', image: '' },
  books: [
   {title:'Todo Dia um Bichinho Some',url:'https://a.co/d/0h5gOf2c',image:'/assets/todo-dia-um-bichinho-some.jpg'},
   {title:'Tudo o Que Sinto e Não Digo',url:'https://a.co/d/0h5hIG07',image:'/assets/tudo-o-que-sinto-e-nao-digo.jpg'},
