@@ -7,7 +7,7 @@ export const profile = {
  // Link público de Areté ainda não fornecido.
  areteUrl: '',
  nextProject: { title: 'Biblioteca Livre', category: 'Conhecimento é direito', description: 'Biblioteca digital que reúne livros, estudos, apostilas e artigos científicos de fontes abertas e gratuitas.', url: 'https://biblioteca-six-mu.vercel.app/', image: '' },
- planetarium: { title: 'Planetário Temporal', category: 'Astronomia · Three.js · WebGL', description: 'Uma experiência 3D do Sistema Solar que atravessa séculos, simula mecânica orbital e permite observar o espaço sob diferentes perspectivas temporais.', url: 'https://planetario-temporal-real-v4.vercel.app/' },
+ planetarium: { title: 'Planetário Temporal', category: 'Astronomia · Three.js · WebGL', description: 'Uma experiência 3D do Sistema Solar que atravessa séculos, simula mecânica orbital e permite observar o espaço sob diferentes perspectivas temporais.', url: 'https://planetarioooo.vercel.app/' },
  books: [
   {title:'Todo Dia um Bichinho Some',url:'https://a.co/d/0h5gOf2c',image:'/assets/todo-dia-um-bichinho-some.jpg'},
   {title:'Tudo o Que Sinto e Não Digo',url:'https://a.co/d/0h5hIG07',image:'/assets/tudo-o-que-sinto-e-nao-digo.jpg'},
