@@ -1,3 +1,4 @@
+// RNCWEB
 /** Edite este arquivo para atualizar seus dados. Não é necessário alterar os componentes. */
 export const profile = {
  name: 'Renan', role: 'Desenvolvedor Full Stack',
@@ -6,6 +7,7 @@ export const profile = {
  website: 'https://poesias-emeric.vercel.app/',
  // Link público de Areté ainda não fornecido.
  areteUrl: '',
+ catalog: { title: 'Catálogo RNCWEB', category: 'WEB DESIGN · DESENVOLVIMENTO', description: 'Uma coleção de sites e landing pages responsivos, com experiências interativas para diferentes segmentos comerciais.', url: 'https://catalogo-rnc-web.vercel.app/' },
  nextProject: { title: 'Biblioteca Livre', category: 'Conhecimento é direito', description: 'Biblioteca digital que reúne livros, estudos, apostilas e artigos científicos de fontes abertas e gratuitas.', url: 'https://biblioteca-six-mu.vercel.app/', image: '' },
  planetarium: { title: 'Planetário Temporal', category: 'Astronomia · Three.js · WebGL', description: 'Uma experiência 3D do Sistema Solar que atravessa séculos, simula mecânica orbital e permite observar o espaço sob diferentes perspectivas temporais.', url: 'https://planetarioooo.vercel.app/' },
  codeLab: { title: 'Code Lab', category: 'Aprendizado · Programação', description: 'Plataforma interativa de estudos de programação com aulas e exercícios práticos. Projeto em construção.', url: 'https://code-lab-omega.vercel.app/' },
